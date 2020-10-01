@@ -3,7 +3,12 @@ import "./Split.css";
 
 function Split(props) {
   const combinedClassName = `split ${props.className}`;
-  return <div className={combinedClassName}>{props.children}</div>;
+  const newStyles = { flex: props.flexBasis };
+  return (
+    <div className={combinedClassName} style={newStyles}>
+      {props.children}
+    </div>
+  );
 }
 
 export default Split;
