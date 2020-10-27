@@ -1,15 +1,27 @@
 .App {
   display: flex;
-  margin: 40px;
-  min-height: calc(100vh - 80px);
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.left {
-  background-color: darkslategray;
-  color: azure;
+.App > main {
+  flex: 1;
 }
 
-.right {
-  background-color: wheat;
-  color: firebrick;
+.App > header {
+  background-color: #333;
+  color: #fcfaf1;
+}
+
+.App > nav {
+  background-color: #222;
+}
+
+.App > main p {
+  color: #444;
+}
+
+.App > footer {
+  background-color: #555;
+  color: #e0dfda;
 }

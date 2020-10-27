@@ -1,16 +1,27 @@
 import React, { Component } from "react";
+import Nav from "./Nav";
+import Header from "./Header";
+import Footer from "./Footer";
+import HomePage from "./HomePage";
 import "./App.css";
 
-import DemonymApp from "./demonymapp/demonymApp";
-
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <DemonymApp />
+        <nav>
+          <Nav />
+        </nav>
+        <header>
+          <Header />
+        </header>
+        <main>
+          <HomePage />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }
 }
-
-export default App;
